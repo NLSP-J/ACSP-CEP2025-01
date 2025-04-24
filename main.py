@@ -1,8 +1,9 @@
 import random, time
 import asyncio
-import words as w
 
-word = random.choice(w.word_list)
+word_list = ["range", "lucas","yboxu","place","earth","never","tenor","kiran","anson","yuxin","debug","scare","brace","hunts","cried","issue","sigma","drugs","arsen","avoid","fatal","voice","chair","court","royal","click","curve","table","brief","fired","screen","tough","ought"]
+word = random.choice(word_list)
+
 import pygame as pg
 pg.init()
 
@@ -110,7 +111,7 @@ async def main():
                     count = 0
                     letters = 0
                     game_over = False
-                    word = random.choice(w.word_list)
+                    word = random.choice(word_list)
                     game_board = [[' ', ' ', ' ', ' ', ' '],
                                 [' ', ' ', ' ', ' ', ' '],
                                 [' ', ' ', ' ', ' ', ' '],

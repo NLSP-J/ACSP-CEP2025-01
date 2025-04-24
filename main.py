@@ -1,9 +1,9 @@
 import random, time
 import asyncio
 import words as w
-L = w.word_list
-random.shuffle(L)
-word = L[0]
+
+random.seed(time.time())
+word = random.choice(w.word_list)
 
 import pygame as pg
 pg.init()

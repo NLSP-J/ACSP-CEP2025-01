@@ -1,8 +1,7 @@
 import random, time
 import asyncio
-
-word_list = ["range", "lucas","yboxu","place","earth","never","tenor","kiran","anson","yuxin","debug","scare","brace","hunts","cried","issue","sigma","drugs","arsen","avoid","fatal","voice","chair","court","royal","click","curve","table","brief","fired","screen","tough","ought"]
-word = random.choice(word_list)
+import words as w
+word = random.choice(w.word_list)
 
 import pygame as pg
 pg.init()
@@ -85,7 +84,7 @@ def draw_win():
 
 async def main():
     global running, count, letters, game_over, game_board, word, word_list, clock
-    word = random.choice(word_list)
+    word = random.choice(w.word_list)
     while running:
         clock = pg.time.get_ticks()
         if clock>=30001:
@@ -112,7 +111,7 @@ async def main():
                     count = 0
                     letters = 0
                     game_over = False
-                    word = random.choice(word_list)
+                    word = random.choice(w.word_list)
                     game_board = [[' ', ' ', ' ', ' ', ' '],
                                 [' ', ' ', ' ', ' ', ' '],
                                 [' ', ' ', ' ', ' ', ' '],

@@ -2,8 +2,7 @@ import random, time
 import asyncio
 import words as w
 
-# word = random.choice(w.word_list)
-word = 'angry'
+word = random.choice(w.word_list)
 import pygame as pg
 pg.init()
 

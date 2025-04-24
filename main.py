@@ -125,6 +125,7 @@ async def main():
         draw_board()
         draw_win()
         pg.display.update()
+        clock.tick(30)
         await asyncio.sleep(0)
 
 asyncio.run(main())

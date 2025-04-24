@@ -3,7 +3,8 @@ import asyncio
 import words as w
 
 random.seed(time.time())
-word = random.choice(w.word_list)
+L = w.word_list
+word = L[random.randint(0,len(L)]
 
 import pygame as pg
 pg.init()

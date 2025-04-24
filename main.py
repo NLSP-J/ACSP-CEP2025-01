@@ -1,7 +1,8 @@
 import random, time
 import asyncio
 import words as w
-word = random.choice(w.word_list)
+
+word = random.choice(random.shuffle(w.word_list))
 
 import pygame as pg
 pg.init()
@@ -84,7 +85,6 @@ def draw_win():
 
 async def main():
     global running, count, letters, game_over, game_board, word, word_list, clock
-    word = random.choice(w.word_list)
     while running:
         clock = pg.time.get_ticks()
         if clock>=30001:

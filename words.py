@@ -1,0 +1,1 @@
+word_list = ["range", "lucas","yboxu","place","earth","never","tenor","kiran","anson","yuxin","debug","scare","brace","hunts","cried","issue","sigma","drugs","arsen","avoid","fatal","voice","chair","court","royal","click","curve","table","brief","fired","screen","tough","ought"]

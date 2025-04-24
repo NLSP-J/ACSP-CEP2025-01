@@ -84,7 +84,8 @@ def draw_win():
         screen.blit(text, (win_width - 700, win_height - 60))
 
 async def main():
-    global running, count, letters, game_over, game_board, word, clock
+    global running, count, letters, game_over, game_board, word, word_list, clock
+    word = random.choice(word_list)
     while running:
         clock = pg.time.get_ticks()
         if clock>=30001:
@@ -125,6 +126,9 @@ async def main():
         draw_board()
         draw_win()
         pg.display.update()
+        if game_over:
+          time.sleep(2)
+          break
         await asyncio.sleep(0)
 
 asyncio.run(main())

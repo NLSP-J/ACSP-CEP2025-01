@@ -125,9 +125,6 @@ async def main():
         draw_board()
         draw_win()
         pg.display.update()
-        if game_over:
-            time.sleep(2)
-            break
         await asyncio.sleep(0)
 
 asyncio.run(main())
